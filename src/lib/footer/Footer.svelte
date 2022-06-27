@@ -5,7 +5,7 @@
 		>
 	</a>
 	<a
-		href="https://github.com/Fractal-Tess/Tauri-Svelte-Template"
+		href="https://github.com/Fractal-Tess/Svelte-Kit-Tauri-Template"
 		class="border-b-2 border-secondary">GitHub</a
 	>
 </div>
