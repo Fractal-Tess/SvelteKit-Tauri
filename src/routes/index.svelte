@@ -26,5 +26,4 @@
 			{message}
 		</div>
 	{/key}
-	<audio src={'out.aac'} controls />
 </div>
