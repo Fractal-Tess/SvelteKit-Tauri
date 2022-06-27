@@ -2,6 +2,7 @@
 	import { theme } from '$lib/stores/theme';
 	import { invoke } from '@tauri-apps/api';
 	import { fade } from 'svelte/transition';
+	import audioFile from '../out.mp3';
 
 	let message = '';
 
@@ -26,4 +27,7 @@
 			{message}
 		</div>
 	{/key}
+	<audio src={audioFile} controls />
+	<audio src={'out.aac'} controls />
+	<audio src={'out.mp3'} controls />
 </div>
