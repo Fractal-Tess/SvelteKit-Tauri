@@ -8,6 +8,11 @@ const config = {
 	theme: {
 		extend: {}
 	},
+	fontFamily: {
+		sans: ['Fira Sans', 'sans-serif'],
+		code: ['Fira Code', 'monospace'],
+		mono: ['Fira Mono', 'monospace']
+	},
 
 	daisyui: {
 		themes: [
