@@ -25,4 +25,8 @@
 			{message}
 		</div>
 	{/key}
+	<!-- svelte-ignore a11y-media-has-caption -->
+	<video src="testing/video.mp4" controls />
+	<audio src="testing/audio.aac" controls />
+	<image href="testing/image.jpg" />
 </div>
