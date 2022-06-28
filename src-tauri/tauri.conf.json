@@ -29,7 +29,7 @@
 				"icons/icon.icns",
 				"icons/icon.ico"
 			],
-			"identifier": "template",
+			"identifier": "com.tauri-sveltekit.template",
 			"longDescription": "",
 			"macOS": {
 				"entitlements": null,
@@ -56,8 +56,8 @@
 		"windows": [
 			{
 				"title": "Tauri-Sveltekit Template",
-				"width": 800,
-				"height": 600,
+				"width": 1200,
+				"height": 800,
 				"fullscreen": false,
 				"visible": false,
 				"transparent": true,
