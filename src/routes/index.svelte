@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { theme } from '$lib/stores/theme';
 	import { invoke } from '@tauri-apps/api';
 	import { fade } from 'svelte/transition';
 
