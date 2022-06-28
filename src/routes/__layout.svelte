@@ -13,7 +13,7 @@
 		<header>
 			<Header />
 		</header>
-		<main class="flex-1 shadow-lg">
+		<main class="flex-1 shadow-lg overflow-scroll">
 			<slot />
 		</main>
 		<footer>
