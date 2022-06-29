@@ -1,17 +1,19 @@
 const daisyui = require('daisyui');
 const typography = require('@tailwindcss/typography');
 const forms = require('@tailwindcss/forms');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
-		extend: {}
-	},
-	fontFamily: {
-		sans: ['Fira Sans', 'sans-serif'],
-		code: ['Fira Code', 'monospace'],
-		mono: ['Fira Mono', 'monospace']
+		extend: {
+			fontFamily: {
+				sans: ['Fira Sans', ...defaultTheme.fontFamily.sans],
+				mono: ['Fira Mono', ...defaultTheme.fontFamily.mono],
+				code: ['Fira Code']
+			}
+		}
 	},
 
 	daisyui: {
