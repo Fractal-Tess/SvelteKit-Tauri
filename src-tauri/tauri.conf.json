@@ -12,8 +12,13 @@
 	},
 	"tauri": {
 		"allowlist": {
-			"all": true
+			"all": true,
+			"protocol": {
+				"asset": true,
+				"assetScope": ["**"]
+			}
 		},
+
 		"bundle": {
 			"active": true,
 			"category": "DeveloperTool",
@@ -48,8 +53,9 @@
 			}
 		},
 		"security": {
-			"csp": null
+			"csp": "default-src 'self'; img-src 'self' asset: https://asset.localhost; media-src 'self' asset: https://asset.localhost"
 		},
+
 		"updater": {
 			"active": false
 		},
