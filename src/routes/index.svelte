@@ -1,7 +1,6 @@
 <script lang="ts">
 	import CallTauri from '$lib/example/call-tauri/CallTauri.svelte';
 	import HashInput from '$lib/example/hash/HashInput.svelte';
-	import Versions from '$lib/example/versions/Versions.svelte';
 </script>
 
 <div class="flex flex-col gap-8 items-center font-bold drop-shadow-ft">
