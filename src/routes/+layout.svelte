@@ -3,8 +3,8 @@
   import '@fortawesome/fontawesome-free/js/all.js';
   import { fade } from 'svelte/transition';
 
-  import Header from '$lib/example/header/Header.svelte';
-  import Footer from '$lib/example/footer/Footer.svelte';
+  import Header from '$lib/components/Header.svelte';
+  import Footer from '$lib/components/Footer.svelte';
 
   import { theme } from '$lib/stores/theme';
   $: {
