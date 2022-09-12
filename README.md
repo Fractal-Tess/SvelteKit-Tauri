@@ -5,7 +5,7 @@
 </div>
 </div>
 
-#### An extremely simple bare bones Svelte/Tauri template with some extra additions for ease of use out of the box.
+### An extremely simple bare bones Svelte/Tauri template with some extra additions for ease of use out of the box.
 
 The extra additions include packages and systems and functionality such as:
 
@@ -18,3 +18,11 @@ The extra additions include packages and systems and functionality such as:
 - Tauri store plugin
 - Fontawesome
 - Roboto Font
+
+#### Important note:
+
+This template does not use the latest version of Svelte-Kit
+
+##### TODO:
+
+    Update project to use latest svelte-kit version
