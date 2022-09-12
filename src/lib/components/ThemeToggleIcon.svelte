@@ -28,6 +28,18 @@
 </svg>
 
 <style>
+  svg {
+    --transition-duration-short: 0.15s;
+    --transition-duration-long: 0.4s;
+
+    --ease-1: cubic-bezier(0.25, 0, 0.3, 1);
+
+    --ease-out-1: cubic-bezier(0, 0, 0, 1);
+
+    --ease-elastic-1: cubic-bezier(0.5, 1.25, 0.75, 1.25);
+    --ease-elastic-2: cubic-bezier(0.5, 1.5, 0.75, 1.25);
+  }
+
   svg .moon,
   svg .sun,
   svg .sun-beams {
@@ -46,40 +58,38 @@
     transform: translateX(-7px);
   }
 
-  @supports (cx: 1) {
-    :global(.light) svg .moon > circle {
-      transform: translateX(0);
-      cx: 17;
-    }
+  :global(.light) svg .moon > circle {
+    transform: translateX(0);
+    cx: 17;
   }
 
   @media (prefers-reduced-motion: no-preference) {
     svg .sun {
       transition: transform var(--transition-duration-long)
-        var(--ease-elastic-3);
+        var(--ease-elastic-1);
     }
 
     svg .sun-beams {
       transition: transform var(--transition-duration-long)
-          var(--ease-elastic-4),
-        opacity var(--transition-duration-long) var(--ease-3);
+          var(--ease-elastic-2),
+        opacity var(--transition-duration-long) var(--ease-1);
     }
 
     svg .moon > circle {
       transition: transform calc(var(--transition-duration-long) / 2)
-        var(--ease-out-5);
+        var(--ease-out-1);
     }
 
     @supports (cx: 1) {
       svg .moon > circle {
         transition: cx calc(var(--transition-duration-long) / 2)
-          var(--ease-out-5);
+          var(--ease-out-1);
       }
     }
 
     :global(.light) svg .sun {
       transform: scale(1.75);
-      transition-timing-function: var(--ease-3);
+      transition-timing-function: var(--ease-1);
       transition-duration: calc(var(--transition-duration-long) / 2);
     }
 
