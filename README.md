@@ -1,4 +1,4 @@
-## Svelte/Tauri Template
+## SvelteKit/Tauri Template
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/Fractal-Tess/SvelteKit-Tauri/main/static/app.png" width="580" style="border-radius:2rem"/>
