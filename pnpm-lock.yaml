@@ -19,6 +19,7 @@ specifiers:
   eslint: ^8.23.1
   eslint-config-prettier: ^8.5.0
   eslint-plugin-svelte3: ^4.0.0
+  husky: ^8.0.1
   node-sass: ^7.0.3
   postcss: ^8.4.16
   postcss-load-config: ^4.0.1
@@ -53,6 +54,7 @@ devDependencies:
   eslint: 8.23.1
   eslint-config-prettier: 8.5.0_eslint@8.23.1
   eslint-plugin-svelte3: 4.0.0_rhh4tpcyg7zwtq6pdnkzw5gxma
+  husky: 8.0.1
   node-sass: 7.0.3
   postcss: 8.4.16
   postcss-load-config: 4.0.1_postcss@8.4.16
@@ -63,7 +65,7 @@ devDependencies:
   svelte-check: 2.9.0_uflugsnve3m2dsawzez2imuhiq
   svelte-preprocess: 4.10.7_5jwnrc6tqgovv4vmzymtlswmoy
   tailwindcss: 3.1.8_postcss@8.4.16
-  tauri-plugin-store-api: github.com/tauri-apps/tauri-plugin-store/6163c041d7d7ab2dc50e01ba5161da4f3d1d548e
+  tauri-plugin-store-api: github.com/tauri-apps/tauri-plugin-store/d8efb964bb1894bdf01407693ee896d0f9c557b3
   tslib: 2.4.0
   typescript: 4.8.3
   vite: 3.1.1_sass@1.54.9
@@ -305,11 +307,6 @@ packages:
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
       tailwindcss: 3.1.8_postcss@8.4.16
-    dev: true
-
-  /@tauri-apps/api/1.0.2:
-    resolution: {integrity: sha512-yuNW0oeJ1/ZA7wNF1KgxhHrSu5viPVzY/UgUczzN5ptLM8dH15Juy5rEGkoHfeXGju90Y/l22hi3BtIrp/za+w==}
-    engines: {node: '>= 12.22.0', npm: '>= 6.6.0', yarn: '>= 1.19.1'}
     dev: true
 
   /@tauri-apps/api/1.1.0:
@@ -1893,6 +1890,12 @@ packages:
     resolution: {integrity: sha512-Fl70vYtsAFb/C06PTS9dZBo7ihau+Tu/DNCk/OyHhea07S+aeMWpFFkUaXRa8fI+ScZbEI8dfSxwY7gxZ9SAVQ==}
     dependencies:
       ms: 2.1.3
+    dev: true
+
+  /husky/8.0.1:
+    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /iconv-lite/0.6.3:
@@ -3628,11 +3631,11 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/tauri-apps/tauri-plugin-store/6163c041d7d7ab2dc50e01ba5161da4f3d1d548e:
-    resolution: {tarball: https://codeload.github.com/tauri-apps/tauri-plugin-store/tar.gz/6163c041d7d7ab2dc50e01ba5161da4f3d1d548e}
+  github.com/tauri-apps/tauri-plugin-store/d8efb964bb1894bdf01407693ee896d0f9c557b3:
+    resolution: {tarball: https://codeload.github.com/tauri-apps/tauri-plugin-store/tar.gz/d8efb964bb1894bdf01407693ee896d0f9c557b3}
     name: tauri-plugin-store-api
     version: 0.1.0
     dependencies:
-      '@tauri-apps/api': 1.0.2
+      '@tauri-apps/api': 1.1.0
       tslib: 2.4.0
     dev: true
