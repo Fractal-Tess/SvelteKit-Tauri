@@ -7,7 +7,7 @@
     "distDir": "../build"
   },
   "package": {
-    "productName": "tauri-sveltekit template",
+    "productName": "sveltekit-tauri",
     "version": "0.1.0"
   },
   "tauri": {
@@ -30,7 +30,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.sveltekit-tauri.template",
+      "identifier": "sveltekit-tauri",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -57,7 +57,7 @@
     },
     "windows": [
       {
-        "title": "SvelteKit-Tauri Template",
+        "title": "SvelteKit-Tauri",
         "width": 1200,
         "height": 800,
         "fullscreen": false,
