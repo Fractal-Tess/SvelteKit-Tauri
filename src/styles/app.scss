@@ -19,7 +19,9 @@ html {
   @apply transition-all;
 }
 
-// This class is used for debugging/development purposes
-.d {
-  border: 3px solid red;
+@layer utilities {
+  // This class is used for debugging/development purposes
+  .d {
+    border: 3px solid red;
+  }
 }
