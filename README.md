@@ -18,11 +18,4 @@ The extra additions include packages and systems and functionality such as:
 - Tauri store plugin
 - Fontawesome
 - Roboto Font
-
-#### Important note:
-
-This template does not use the latest version of Svelte-Kit
-
-##### TODO:
-
-    Update project to use latest svelte-kit version
+- Husky
