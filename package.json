@@ -1,29 +1,29 @@
 {
   "name": "sveltekit-tauri",
   "version": "0.0.1",
-  "type": "module",
-  "license": "MIT",
-  "author": {
-    "email": "vgfractal@gmail.com",
-    "name": "Vilian Gerdzhikov",
-    "url": "https://gist.github.com/Fractal-Tess"
-  },
   "repository": {
     "type": "github",
     "url": "https://github.com/Fractal-Tess/Svelte-Tauri"
   },
+  "license": "MIT",
+  "author": {
+    "name": "Vilian Gerdzhikov",
+    "email": "vgfractal@gmail.com",
+    "url": "https://gist.github.com/Fractal-Tess"
+  },
+  "type": "module",
   "scripts": {
     "build": "tauri build",
     "dev": "tauri dev",
     "format": "prettier --write --plugin-search-dir=. .",
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "husky install",
     "lint": "prettier --check --plugin-search-dir=. .",
     "svelte:build": "vite build",
     "svelte:check": "svelte-check --tsconfig ./tsconfig.json",
     "svelte:check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "svelte:dev": "vite dev",
-    "svelte:prepare": "svelte-kit sync",
-    "preinstall": "npx only-allow pnpm",
-    "postinstall": "husky install"
+    "svelte:prepare": "svelte-kit sync"
   },
   "devDependencies": {
     "@fontsource/fira-code": "^4.5.11",
