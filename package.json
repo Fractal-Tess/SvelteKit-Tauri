@@ -22,7 +22,8 @@
     "svelte:check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "svelte:dev": "vite dev",
     "svelte:prepare": "svelte-kit sync",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "@fontsource/fira-code": "^4.5.11",
