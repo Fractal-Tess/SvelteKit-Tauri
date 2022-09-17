@@ -16,12 +16,13 @@
     "build": "tauri build",
     "dev": "tauri dev",
     "format": "prettier --write --plugin-search-dir=. .",
-    "lint": "prettier --check --plugin-search-dir=. . && eslint .",
+    "lint": "prettier --check --plugin-search-dir=. .",
     "svelte:build": "vite build",
     "svelte:check": "svelte-check --tsconfig ./tsconfig.json",
     "svelte:check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "svelte:dev": "vite dev",
-    "svelte:prepare": "svelte-kit sync"
+    "svelte:prepare": "svelte-kit sync",
+    "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
     "@fontsource/fira-code": "^4.5.11",
@@ -33,18 +34,17 @@
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
-    "@sveltejs/vite-plugin-svelte": "^1.0.5",
-    "svelte-fa": "^3.0.3",
     "@sveltejs/adapter-static": "1.0.0-next.43",
     "@sveltejs/kit": "1.0.0-next.483",
+    "@sveltejs/vite-plugin-svelte": "^1.0.5",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.7",
     "@tauri-apps/api": "^1.1.0",
-    "@tauri-apps/cli": "^1.0.5",
+    "@tauri-apps/cli": "^1.1.1",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
     "autoprefixer": "^10.4.11",
-    "daisyui": "^2.27.0",
+    "daisyui": "^2.28.0",
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
@@ -57,11 +57,12 @@
     "sass": "^1.54.9",
     "svelte": "^3.50.1",
     "svelte-check": "^2.9.0",
+    "svelte-fa": "^3.0.3",
     "svelte-preprocess": "^4.10.7",
     "tailwindcss": "^3.1.8",
     "tauri-plugin-store-api": "github:tauri-apps/tauri-plugin-store#dev",
     "tslib": "^2.4.0",
     "typescript": "^4.8.3",
-    "vite": "^3.1.1"
+    "vite": "^3.1.2"
   }
 }
