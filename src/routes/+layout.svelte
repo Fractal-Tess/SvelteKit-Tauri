@@ -1,6 +1,5 @@
 <script lang="ts">
   import '$styles';
-  import '@fortawesome/fontawesome-free/js/all.js';
   import { fade } from 'svelte/transition';
 
   import Header from '$lib/components/Header.svelte';
