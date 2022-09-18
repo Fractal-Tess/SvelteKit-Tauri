@@ -1,11 +1,12 @@
+@import '@fontsource/roboto/index.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import '@fontsource/roboto/index.css';
-
 html {
   -webkit-font-smoothing: antialiased;
+
   scroll-behavior: smooth;
 }
 
@@ -16,7 +17,7 @@ html {
 }
 
 * {
-  @apply transition-all;
+  @apply transition-all transform-gpu;
 }
 
 @layer utilities {
