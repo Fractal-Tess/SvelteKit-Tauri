@@ -2,5 +2,5 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # If not using pnpm, switch this to your package manager
-pnpm lint
 pnpm format
+pnpm lint
