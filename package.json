@@ -15,10 +15,10 @@
   "scripts": {
     "build": "tauri build",
     "dev": "tauri dev",
-    "format": "prettier --write --plugin-search-dir=. .",
+    "format": "prettier --write .",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "husky install",
-    "lint": "prettier --check --plugin-search-dir=. .",
+    "lint": "prettier --check . && eslint .",
     "svelte:build": "vite build",
     "svelte:check": "svelte-check --tsconfig ./tsconfig.json",
     "svelte:check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
