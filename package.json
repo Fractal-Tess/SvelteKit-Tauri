@@ -16,7 +16,6 @@
     "build": "tauri build",
     "dev": "tauri dev",
     "format": "prettier --write .",
-    "preinstall": "npx only-allow pnpm",
     "postinstall": "husky install",
     "lint": "prettier --check . && eslint .",
     "svelte:build": "vite build",
