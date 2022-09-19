@@ -5,8 +5,7 @@
 </div>
 </div>
 
-### A simple bare bones SvelteKit/Tauri template with some extra additions for ease of use out of the box.
-
+### A simple SvelteKit-Tauri starter with a few opinionated additions.
 - Scss
 - Tailwind
 - DaisyUI
