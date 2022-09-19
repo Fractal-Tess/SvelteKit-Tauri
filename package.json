@@ -24,6 +24,12 @@
     "svelte:dev": "vite dev",
     "svelte:prepare": "svelte-kit sync"
   },
+  "lint-staged": {
+    "*": [
+      "prettier --write",
+      "eslint"
+    ]
+  },
   "devDependencies": {
     "@fontsource/fira-code": "^4.5.11",
     "@fontsource/fira-mono": "^4.5.9",
@@ -48,6 +54,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "node-sass": "^7.0.3",
     "postcss": "^8.4.16",
     "postcss-load-config": "^4.0.1",
